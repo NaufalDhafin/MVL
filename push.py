@@ -4,7 +4,7 @@ push = input("Yakin mau Commit? y/n ")
 if push == "y":
     os.system("git add .")
     print()
-    os.system("git commit -m 'update mvl'")
+    os.system("git commit -m 'naufal'")
     print()
     os.system("git push")
     print()
