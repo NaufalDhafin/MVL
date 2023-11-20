@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@400;500&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: andika, inter, rubik;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(212, 212, 212);
+}
+#desktop{
+    display: flex;
+}
+#mobile{
+    display: none;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(83, 83, 83);
+    margin-bottom: 10px;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(0, 195, 255);
+    width: 50%;
+    letter-spacing: 3px;
+    text-shadow: 0 0 2px rgb(0, 195, 255);
+    font-size: 20px;
+}
+
+
+.header .link{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+}
+.link button{
+    border: none;
+    cursor: pointer;
+}
+.link .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(243, 243, 243);
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+    color: rgb(0, 195, 255);
+    border: 1px solid rgb(0, 195, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.322);
+    transition: .2s;
+}
+.link .menu:hover{
+    background: rgb(0, 195, 255);
+    color: white;
+    box-shadow: 0 0 5px rgb(0, 195, 255);
+    text-shadow: 0 0 3px white;
+}
+.menu i{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 3px;
+}
+
+
+.loaders{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+}
+.loaders .loader {
+    --path: #2f3545;
+    --dot: #5628ee;
+    --duration: 3s;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader svg rect, .loader svg polygon, .loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  .loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    stroke-dashoffset: 0;
+    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader.triangle {
+    width: 48px;
+  }
+  
+  .loader.triangle:before {
+    left: 21px;
+    transform: translate(-10px, -18px);
+    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  @keyframes pathTriangle {
+    33% {
+      stroke-dashoffset: 74;
+    }
+  
+    66% {
+      stroke-dashoffset: 147;
+    }
+  
+    100% {
+      stroke-dashoffset: 221;
+    }
+  }
+  
+  @keyframes dotTriangle {
+    33% {
+      transform: translate(0, 0);
+    }
+  
+    66% {
+      transform: translate(10px, -18px);
+    }
+  
+    100% {
+      transform: translate(-10px, -18px);
+    }
+  }
+  
+  @keyframes pathRect {
+    25% {
+      stroke-dashoffset: 64;
+    }
+  
+    50% {
+      stroke-dashoffset: 128;
+    }
+  
+    75% {
+      stroke-dashoffset: 192;
+    }
+  
+    100% {
+      stroke-dashoffset: 256;
+    }
+  }
+  
+  @keyframes dotRect {
+    25% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(18px, -18px);
+    }
+  
+    75% {
+      transform: translate(0, -36px);
+    }
+  
+    100% {
+      transform: translate(-18px, -18px);
+    }
+  }
+  
+  @keyframes pathCircle {
+    25% {
+      stroke-dashoffset: 125;
+    }
+  
+    50% {
+      stroke-dashoffset: 175;
+    }
+  
+    75% {
+      stroke-dashoffset: 225;
+    }
+  
+    100% {
+      stroke-dashoffset: 275;
+    }
+  }
+  
+  .loader {
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+   
+
+
+.beranda{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page{
+    color: rgb(0, 140, 255);
+    background: white;
+    width: 100px;
+    margin-left: 10px;
+    text-align: center;
+    font-style: italic;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.beranda .head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.head img{
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.842);
+}
+
+.beranda .isi{
+    width: 95%;
+    background: white;
+    font-family: rubik;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+.isi .judul{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+.isi .text{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.website{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.list .listW{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 350px;
+    border-radius: 20px;
+    align-items: center;
+}
+.listW img{
+    width: 350px;
+    border-radius: 20px;
+}
+.listW .nama{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+.listW .ket{
+    font-family: rubik;
+    margin-left: 5px;
+}
+.listW a{
+    text-decoration: none;
+    background: rgb(0, 195, 255);
+    width: 115px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: azure;
+    transition: .3s;
+    letter-spacing: 0;
+}
+.listW a:hover{
+    width: 130px;
+    letter-spacing: 1px;
+}
+
+
+.informasi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.informasi .listI{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background: white;
+    border-radius: 20px;
+    font-family: rubik;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.servis{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servis .input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    width: 95%;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 20px;
+}
+.input form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    gap: 5px;
+    margin-top: 10px;
+}
+.input form .text{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 195, 255);
+    font-family: inter;
+    font-size: 16px;
+}
+.input form select{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 195, 255);
+    font-family: inter;
+    font-size: 16px;
+}
+.input form textarea{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 195, 255);
+    font-family: inter;
+    font-size: 16px;
+}
+.input form .kirim{
+    width: 50%;
+    height: 40px;
+    font-family: inter;
+    font-size: 16px;
+    border: 2px solid rgb(0, 195, 255);
+    border-radius: 10px;
+    background: none;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:800px){
+    #mobile{
+        display: flex;
+        letter-spacing: 3px;
+    }
+    #desktop{
+        display: none;
+    }
+    .header .logo{
+        width: 10%;
+    }
+
+    .link .menu{
+        width: 50px;
+        padding: 2px;
+    }
+}
