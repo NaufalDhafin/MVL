@@ -11,7 +11,7 @@
 
     <div class="list">
         <div class="listW">
-            <img src="../app/img/mvlcloud.png">
+            <img src="../app/img/CA.png">
             <p class="nama">CA Chat Anonimus</p>
             <p class="ket">CA (Chat Anonimus), adalah pesan yang dikirim secara privat ke pengguna.</p>
             <a href="msg/">Buka Website</a>
