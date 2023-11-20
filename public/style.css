@@ -82,6 +82,7 @@ body{
 .loaders{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -238,7 +239,9 @@ body{
     display: inline-block;
     margin: 0 16px;
   }
-  
+  .pesan{
+    font-size: 25px;
+  }
    
 
 
