@@ -13,9 +13,9 @@
     <div class="list">
         <div class="listW">
             <img src="../app/img/CA.png">
-            <p class="nama">CA Chat Anonimus</p>
-            <p class="ket">CA (Chat Anonimus), adalah pesan yang dikirim secara privat ke pengguna.</p>
-            <a href="msg/">Buka Website</a>
+            <p class="nama">Sent Anonymous Messages</p>
+            <p class="ket">Sent Anonymous Messages atau disingkat SAM yang artinya mengirim pesan secara anonim.</p>
+            <a href="../sam">Buka Website</a>
         </div>
     </div>
 </div>

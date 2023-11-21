@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@400;500&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+    align-items: center;
+}
+
+
+.nama{
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: andika;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-top: 10px;
+    color: #880c6d;
+}
+
+
+.msg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.main{
+    background: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: andika;
+}
+.msg .tentang{
+    background: #880c6d;
+    border-radius: 8px;
+    color: white;
+    width: 90%;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.msg .pesan{
+    background: white;
+    color: #880c6d;
+    width: 90%;
+    padding: 5px;
+}
