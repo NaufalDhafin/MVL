@@ -1,9 +1,3 @@
-<?php 
-    include "../app/database/hosted.php";
-    $users1 = $_GET['sam'];
-    $select1 = $conn->query("SELECT * FROM users where id_sam = '$users1'");
-    $row1 = mysqli_fetch_array($select1);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,15 +11,15 @@
 
     <div class="header">
         <div class="kiri">
-            <p id="nama"><?= $row['nama']?></p>
-            <p id="id"><strong>ID : </strong><?= $row['id_sam']?></p>
+            <p id="nama">nama pengguna</p>
+            <p id="id"><strong>ID : </strong>31123</p>
         </div>
     </div>
 
     <div class="link">
         <p>Salin dan bagikan ke sosmed kamu</p>
         <div class="salin">
-            <input value="dapine.my.id/sam/all.php?u=<?= $row['id_sam']?>" id="copy" readonly>
+            <input value="dapine.my.id/sam/sam.php?u=349" id="copy" readonly>
             <button onclick="copyLink()"><i class="ri-clipboard-line"></i></button>
         </div>
     </div>
@@ -34,16 +28,7 @@
 
     <div class="inbox">
         <p id="tentang">tentang</p>
-<?php 
-    include "../app/database/hosted.php";
-    $users = $_GET['sam'];
-    $select = $conn->query("SELECT * FROM users AS u INNER JOIN msg AS m ON u.id_sam = m.id_sam WHERE u.id_sam = '$users'");
-    $no = 1;
-    while($row2 = mysqli_fetch_array($select)){?>
-
-        <p id="pesan"><strong><?= $no++?>. </strong><?= $row2['pesan']?></p>
-
-<?php }?>
+        <p id="pesan"><strong>1. </strong>pesan</p>
     </div>
     <script>
         function copyLink() {  

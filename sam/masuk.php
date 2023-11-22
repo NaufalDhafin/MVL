@@ -30,7 +30,7 @@
             $select = $conn->query("SELECT * FROM users where id_sam = '$_POST[id_sam]'");
             $row = mysqli_fetch_array($select);
             if($_POST['id_sam'] == $row['id_sam']){
-                header("location:sam.php?sam=$row[id_sam]");
+                header("location:sam.php?u=$row[id_sam]");
             }
             else{
                 echo '<script>window.alert("GAGAL MEMBUAT SAM! Silahkan hubungi mimim.")</script>';

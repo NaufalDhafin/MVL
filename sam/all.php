@@ -1,3 +1,19 @@
+<?php 
+        include "../app/database/hosted.php";
+        if(isset($_POST['kirim'])){
+            $users = $_GET['u'];
+            $select = $conn->query("SELECT * FROM users where id_sam = '$users'");
+            $row = mysqli_fetch_array($select);
+
+            $insert = $conn->query("INSERT INTO msg SET id_sam = '$row[id_sam]', pesan = '$_POST[pesan]'");
+            if($insert){
+                echo '<script>window.alert("Mengirim pesan berhasil!")</script>';
+            }
+            else{
+                echo '<script>window.alert("GAGAL MEMBUAT SAM! Silahkan hubungi mimim.")</script>';
+            }
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +24,7 @@
 </head>
 <body>
     <div class="page">
-        <p>Kirim pesan untuk {users}!</p>
+        <p>Kirim pesan untuk <?= $row['nama']?>!</p>
     </div>
     <form method="post" class="form">
         <div class="form-control">
@@ -31,21 +47,5 @@
             Kirim Sekarang
         </button>
     </form>
-    <?php 
-        include "../app/database/hosted.php";
-        if(isset($_POST['kirim'])){
-            $users = $_GET['sam'];
-            $select = $conn->query("SELECT * FROM users where id_sam = '$users'");
-            $row = mysqli_fetch_array($select);
-
-            $insert = $conn->query("INSERT INTO msg SET id_sam = '$row[id_sam]', pesan = '$_POST[pesan]'");
-            if($insert){
-                echo '<script>window.alert("Mengirim pesan berhasil!")</script>';
-            }
-            else{
-                echo '<script>window.alert("GAGAL MEMBUAT SAM! Silahkan hubungi mimim.")</script>';
-            }
-        }
-    ?>
 </body>
 </html>
