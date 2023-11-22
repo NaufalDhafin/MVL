@@ -1,6 +1,6 @@
 <?php 
     include "../app/database/hosted.php";
-    $users1 = $_GET['sam'];
+    $users1 = $_GET['u'];
     $select1 = $conn->query("SELECT * FROM users where id_sam = '$users1'");
     $row1 = mysqli_fetch_array($select1);
 ?>
