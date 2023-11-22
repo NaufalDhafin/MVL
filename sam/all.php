@@ -1,9 +1,9 @@
 <?php 
         include "../app/database/hosted.php";
+        $users = $_GET['u'];
+        $select = $conn->query("SELECT * FROM users where id_sam = '$users'");
+        $row = mysqli_fetch_array($select);
         if(isset($_POST['kirim'])){
-            $users = $_GET['u'];
-            $select = $conn->query("SELECT * FROM users where id_sam = '$users'");
-            $row = mysqli_fetch_array($select);
 
             $insert = $conn->query("INSERT INTO msg SET id_sam = '$row[id_sam]', pesan = '$_POST[pesan]'");
             if($insert){
