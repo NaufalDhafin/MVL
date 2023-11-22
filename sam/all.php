@@ -46,6 +46,15 @@
         <button class="button2" type="submit" name="kirim">
             Kirim Sekarang
         </button>
+        <button class="button2" type="submit" name="buat" style="font-size: 15px;margin-top: 10px;">
+            Buat juga yu...
+        </button>
+        <?php 
+            if(isset($_POST['buat'])){
+                header("location:c-sam.php");
+            }
+        ?>
     </form>
+    
 </body>
 </html>
