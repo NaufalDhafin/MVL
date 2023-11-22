@@ -36,7 +36,7 @@
         <p id="tentang">tentang</p>
 <?php 
     include "../app/database/hosted.php";
-    $users = $_GET['sam'];
+    $users = $_GET['u'];
     $select = $conn->query("SELECT * FROM users AS u INNER JOIN msg AS m ON u.id_sam = m.id_sam WHERE u.id_sam = '$users'");
     $no = 1;
     while($row2 = mysqli_fetch_array($select)){?>
