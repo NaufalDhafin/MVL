@@ -17,15 +17,15 @@
 
     <div class="header">
         <div class="kiri">
-            <p id="nama"><?= $row['nama']?></p>
-            <p id="id"><strong>ID : </strong><?= $row['id_sam']?></p>
+            <p id="nama"><?= $row1['nama']?></p>
+            <p id="id"><strong>ID : </strong><?= $row1['id_sam']?></p>
         </div>
     </div>
 
     <div class="link">
         <p>Salin dan bagikan ke sosmed kamu</p>
         <div class="salin">
-            <input value="dapine.my.id/sam/all.php?u=<?= $row['id_sam']?>" id="copy" readonly>
+            <input value="dapine.my.id/sam/all.php?u=<?= $row1['id_sam']?>" id="copy" readonly>
             <button onclick="copyLink()"><i class="ri-clipboard-line"></i></button>
         </div>
     </div>
