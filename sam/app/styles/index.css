@@ -195,4 +195,10 @@ body {
   .hero-section img {
     display: none;
   }
+  .hero-section .buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
