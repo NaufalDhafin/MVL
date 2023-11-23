@@ -105,6 +105,7 @@ a{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 .tools .list{
@@ -112,6 +113,111 @@ a{
     flex-direction: column;
     align-items: center;
     background: #6d5858;
+    color: #F7E2C9;
     padding: 5px;
     border-radius: 10px;
+    box-shadow: 0 0 7px black;
+}
+.tools .list img{
+    width: 250px;
+}
+.tools .list p{
+    font-size: 17px;
+}
+.tools .list a{
+    border: 2px solid #F7E2C9;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #F7E2C9;
+    transition: .2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: inter;
+    padding: 3px 10px;
+}
+.tools .list a:hover{
+    background: #F7E2C9;
+    color: #6d5858;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: inter;
+}
+
+
+.kontak{
+    width: 94%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kontak form{
+    background: #6d5858;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.kontak form #h{
+    font-size: 20px;
+    color: #F7E2C9;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.kontak form #d{
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -3px;
+}
+.kontak form input{
+    width: 100%;
+    height: 28px;
+    font-family: inter;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    border: none;
+}
+.kontak form select{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: andika;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+}
+.kontak form textarea{
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    font-family: inter;
+}
+.kontak form .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.kontak form .btn button{
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #F7E2C9;
+    background: rgba(255, 255, 255, 0);
+    font-family: inter;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #F7E2C9;
+    transition: .2s;
+}
+.kontak form .btn button:hover{
+    background: #F7E2C9;
+    color: #594848;
 }
