@@ -98,3 +98,20 @@ a{
     font-family: rubik;
     letter-spacing: 0.5px;
 }
+
+
+.tools{
+    width: 94%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tools .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #6d5858;
+    padding: 5px;
+    border-radius: 10px;
+}
