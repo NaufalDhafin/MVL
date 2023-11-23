@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@400;500&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: andika, inter, rubik;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(253, 243, 225);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.header{
+    background: #6d5858;
+    display: flex;
+    width: 94%;
+    align-items: center;
+    height: 70px;
+    border-radius: 20px;
+    transition: .3s;
+    margin-top: 5px;
+}
+.header:hover{
+    width: 97%;
+}
+a{
+    text-decoration: none;
+}
+
+
+.header .logo{
+    width: 100px;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+}
+.logo a img{
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+
+.header .page{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-right: 20px;
+    gap: 5px;
+}
+.page .link{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid #F7E2C9;
+    color: #F7E2C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.page .link:hover{
+    background: #F7E2C9;
+    color: #594848;
+    box-shadow: 0 0 5px #F7E2C9;
+}
+
+
+.index{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.index img{
+    border-radius: 30px;
+}
+.index .website{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.website .judul{
+    width: 100%;
+    font-size: 18px;
+    font-family: inter;
+}
+.website .sub{
+    width: 95%;
+    font-family: rubik;
+    letter-spacing: 0.5px;
+}

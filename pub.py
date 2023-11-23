@@ -6,4 +6,4 @@ os.system(f"git commit -m '{publish}'")
 os.system("git push")
 print()
 
-print(f"{publish} Selesai di Publish")
+print(f"{publish} -> Selesai di Publish")
