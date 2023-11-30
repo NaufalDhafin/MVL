@@ -145,7 +145,7 @@ body {
 }
 .hero-section .buttons .join:hover {
   background-color: #140d0b;
-  border: 2px solid rgb(252, 252, 252);
+  border: 2px solid #ffc0ad;
 }
 
 /* Hamburger menu styles */
@@ -229,4 +229,104 @@ body {
 .footer .alert p #none{
   color: rgb(255, 106, 47);
   font-size: 25px;
+}
+
+
+form{
+  background: #271c19;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: 0 0 10px #140d0b;
+}
+
+form #hub{
+  background: #ffc0ad;
+  color: #271c19;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  margin-top: -10px;
+  border-radius: 1px 1px 15px 15px;
+  height: 25px;
+  box-shadow: 0 0 5px black;
+  font-family: rubik;
+  font-size: 17px;
+}
+
+form .input{
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .input .in{
+  font-family: inter;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+form .input .in input{
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 600;
+  font-family: inter;
+  letter-spacing: 0.5px;
+}
+form .input .in select{
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 600;
+  font-family: inter;
+  letter-spacing: 0.5px;
+}
+form .input .in select option{
+  font-weight: 600;
+  font-family: inter;
+  letter-spacing: 0.5px;
+}
+form .input .in textarea{
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 600;
+  font-family: inter;
+  letter-spacing: 0.5px;
+}
+
+form .input .btn{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+form .input .btn button{
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  border: 2px solid #ffc0ad;
+  background: none;
+  color: #ffc0ad;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+  cursor: pointer;
+}
+form .input .btn button:hover{
+  background: #ffc0ad;
+  color: #271c19;
+  border-radius: 10px;
 }
