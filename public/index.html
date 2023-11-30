@@ -1,41 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVL | Mini Virtual Library</title>
-    <meta name="description" content="Mini Virtual Library adalah sekumpulan 
-    program website yang di buat oleh dafin(owner)">
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <a href="index.html"><img src="../app/img/MVL.png"></a>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Mini Virtual Library</a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="">Beranda</a></li>
+          <li><a href="">Website</a></li>
+          <li><a href="">Kontak</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="" class="signin">Sign In</a>
+          <a href="" class="signup">Sign Up</a>
         </div>
-        <div class="page">
-            <a href="website.html" class="link">
-                <p>Website</p>
-            </a>
-            <a href="Kontak.html" class="link">
-                <p>Kontak</p>
-            </a>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero">
+        <h2>Mini Virtual Library</h2>
+        <p>
+            Mini Virtual Library atau disingkat MVL, Adalah website
+            yang di kembangkan oleh Naufal Dhafin untuk keperluan pribadi
+            seperti menyimpan data tugas atau projek yang di kerjakan, Tetapi
+            sekarang website ini bisa dipakai untuk kamu juga loh, Dengan
+            adanya tools/program yang dibuat di sini memungkinkan berguna
+            untuk banyak orang.
+        </p>
+        <div class="buttons">
+          <a href="" class="join">Website</a>
+          <!-- <a href="" class="learn">Learn More</a> -->
         </div>
-    </div>
-
-    <div class="index">
-        <img src="../app/img/benner.png">
-        <div class="website">
-            <p class="judul"><strong>Apa itu MVL?</strong></p>
-            <p class="sub">
-                Mini Virtual Library atau disingkat MVL, Adalah website
-                yang di kembangkan oleh Naufal Dhafin untuk keperluan pribadi
-                seperti menyimpan data tugas atau projek yang di kerjakan, Tetapi
-                sekarang website ini bisa dipakai untuk kamu juga loh, Dengan
-                adanya tools/program yang dibuat di sini memungkinkan berguna
-                untuk banyak orang.
-            </p>
-        </div>
-    </div>
-</body>
+      </div>
+      <div class="img">
+        <img src="https://www.codingnepalweb.com/demos/create-responsive-website-html-css/hero-bg.png" alt="hero image" />
+      </div>
+    </section>
+  </body>
 </html>

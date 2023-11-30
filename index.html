@@ -1,39 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVL - Mini Virtual Libray</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <meta http-equiv="refresh" content="1;public/">
-</head>
-
-<body>
-    <div class="loaders">
-        <div class="load">
-            <div class="loader">
-                <svg viewBox="0 0 80 80">
-                    <circle id="test" cx="40" cy="40" r="32"></circle>
-                </svg>
-            </div>
-            
-            <div class="loader triangle">
-                <svg viewBox="0 0 86 80">
-                    <polygon points="43 8 79 72 7 72"></polygon>
-                </svg>
-            </div>
-            
-            <div class="loader">
-                <svg viewBox="0 0 80 80">
-                    <rect x="8" y="8" width="64" height="64"></rect>
-                </svg>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVL | Mini Virtual Library</title>
+    <link rel="stylesheet" href="public/styles/load.css" />
+    <meta http-equiv="refresh" content="0;public/">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="">Mini Virtual Library</a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="">Beranda</a></li>
+          <li><a href="">Website</a></li>
+          <li><a href="">Kontak</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="" class="signin">Sign In</a>
+          <a href="" class="signup">Sign Up</a>
         </div>
-        <!-- <div class="pesan">
-            Dalam Pengembangan
-        </div> -->
-    </div>
-</body>
+      </nav>
+    </header>
+    <section class="hero-section">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+        <div class="p">Loading Brow...</div>
+    </section>
+  </body>
 </html>
