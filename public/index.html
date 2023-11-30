@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVL | Mini Virtual Library</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
-        <h2 class="logo"><a href="#">Mini Virtual Library</a></h2>
+        <h2 class="logo"><a href="index.html">Mini Virtual Library</a></h2>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -18,13 +19,13 @@
           </svg>
         </label>
         <ul class="links">
-          <li><a href="">Beranda</a></li>
-          <li><a href="">Website</a></li>
-          <li><a href="">Kontak</a></li>
+          <li><a href="?page=1">Beranda</a></li>
+          <li><a href="?page=2">Fitur</a></li>
+          <li><a href="?page=3">Hubungi</a></li>
         </ul>
         <div class="buttons">
-          <a href="" class="signin">Sign In</a>
-          <a href="" class="signup">Sign Up</a>
+          <a href="?page=4" class="signin">Sign In</a>
+          <a href="?page=5" class="signup">Sign Up</a>
         </div>
       </nav>
     </header>
@@ -36,17 +37,36 @@
             yang di kembangkan oleh Naufal Dhafin untuk keperluan pribadi
             seperti menyimpan data tugas atau projek yang di kerjakan, Tetapi
             sekarang website ini bisa dipakai untuk kamu juga loh, Dengan
-            adanya tools/program yang dibuat di sini memungkinkan berguna
+            adanya Fitur/Program yang dibuat di sini memungkinkan berguna
             untuk banyak orang.
         </p>
         <div class="buttons">
-          <a href="" class="join">Website</a>
-          <!-- <a href="" class="learn">Learn More</a> -->
+          <a href="?page=2" class="join">Fitur</a>
+          <a href="?page=3" class="learn">Hubungi Developer</a>
         </div>
       </div>
       <div class="img">
-        <img src="https://www.codingnepalweb.com/demos/create-responsive-website-html-css/hero-bg.png" alt="hero image" />
+        <img src="../app/img/MVL.png" alt="hero image" style="width: 300px;border-radius: 50%;">
       </div>
     </section>
+    <div class="footer">
+      <div class="alert">
+        <!-- <?php 
+          if(isset($_GET['page'])){
+            if($_GET['page'] == 1){
+              header("location:index.php");
+            }
+            elseif($_GET['page'] == 2){
+              header("location:fitur.php");
+            }
+            elseif($_GET['page'] == 3){
+              header("location:contact.php");
+            }
+          }
+        ?> -->
+        <p><i class="ri-check-double-line" id="done"></i><i>Loading...</i></p>
+        <!-- <p><i class="ri-error-warning-line" id="none"></i><i>Website Bermasalah...</i></p> -->
+      </div>
+    </div>
   </body>
 </html>
