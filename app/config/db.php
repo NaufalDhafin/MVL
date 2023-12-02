@@ -13,8 +13,8 @@ const database = 'mvl';
 // const password = '';
 // const database = '';
 
-const conn = mysqli_connect(hostname,username,password,database);
-if(!conn){
+$conn = mysqli_connect(hostname,username,password,database);
+if(!$conn){
     echo "(<span id='a'>BAHAYA</span>) <p id='b'>= 'KONEKSI DATABASE BERMASALAH!'</p>";
 }
 ?>

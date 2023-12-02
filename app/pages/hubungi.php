@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="../../public/styles/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="header">
         <nav class="navbar">
@@ -36,21 +34,21 @@
             <div class="input">
                 <div class="in">
                     <p>Nama</p>
-                    <input type="text" name="">
+                    <input type="text" name="nama">
                 </div>
                 <div class="in">
                     <p>Tipe</p>
-                    <select name="" required>
+                    <select name="tipe" required>
                         <option>Pilih Tipe</option>
-                        <option value="">Website Bermasalah</option>
-                        <option value="">Saran/Pertanyaan</option>
-                        <option value="">Hubungi Saja</option>
-                        <option value="">Lainnya</option>
+                        <option value="Website Bermasalah">Website Bermasalah</option>
+                        <option value="Saran/Pertanyaan">Saran/Pertanyaan</option>
+                        <option value="Hubungi Saja">Hubungi Saja</option>
+                        <option value="Lainnya">Lainnya</option>
                     </select>
                 </div>
                 <div class="in">
                     <p>Pesan</p>
-                    <textarea name="" cols="25" rows="5"></textarea>
+                    <textarea name="pesan" cols="25" rows="5"></textarea>
                 </div>
                 <div class="btn">
                     <button type="submit" name="send">Kirim</button>
@@ -59,24 +57,24 @@
         </form>
     </section>
     <div class="footer">
-        <!-- <div class="alert">
-      <?php 
-        if(isset($_GET['page'])){
-          if($_GET['page'] == 1){
-            header("location:index.php");
-          }
-          elseif($_GET['page'] == 2){
-            header("location:fitur.php");
-          }
-          elseif($_GET['page'] == 3){
-            header("location:contact.php");
-          }
-        }
-      ?>
-      <p><i class="ri-check-double-line" id="done"></i><i>Dalam Pengembangan...</i></p>
-      <p><i class="ri-error-warning-line" id="none"></i><i>Website Bermasalah...</i></p>
-    </div> -->
+        <?php 
+            include "../app/config/db.php";
+            if(isset($_POST['send'])){
+                $query = $conn->query("INSERT INTO hubungi SET nama = '$_POST[nama]', tipe = '$_POST[tipe]', pesan = '$_POST[pesan]'");
+                if($query){
+                    echo '<div class="alert">';
+                    echo '<p><i class="ri-check-double-line" id="done"></i><i>Terkirim</i></p>';
+                    echo '</div>';
+                    echo '<meta http-equiv="refresh" content="2;?pages=hubungi">';
+                }
+                else{
+                    echo '<div class="alert">';
+                    echo '<p><i class="ri-error-warning-line" id="none"></i><i>Gagal Terkirim</i></p>';
+                    echo '</div>';
+                    echo '<meta http-equiv="refresh" content="2;?pages=hubungi">';
+                }
+            }
+        ?>
     </div>
 </body>
-
 </html>

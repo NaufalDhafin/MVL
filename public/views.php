@@ -11,6 +11,9 @@ if(isset($_GET['pages'])){
     elseif($pages == "hubungi"){
         include "../app/pages/hubungi.php";
     }
+    else{
+        include "../app/pages/index.php";
+    }
 }
 else{
     include "../app/pages/index.php";
