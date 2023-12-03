@@ -1,4 +1,0 @@
-XENDIT TEST MODE{
-api-key     : xnd_development_YyJsNRElXxxUqZBhVRJyfRmgEqYO72TrZgaOFnPHG2Q74is73RhMnu64TVzG0
-callback    : EsLx36J7GzKJvKxDr6tab0iSx7699loUQn18VpV44CdTkoIS
-}
