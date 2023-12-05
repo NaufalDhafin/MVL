@@ -10,6 +10,9 @@ while ($row = mysqli_fetch_array($query)) {
         <td data-label="maktul"><?= $row['maktul']?></td>
         <td data-label="tanggal"><?= $row['tanggal']?></td>
         <td data-label="status"><?= $row['status']?></td>
-        <td data-label="unduh"><a href="app/src/<?= $row['link']?>">Unduh</a></td>
+        <td data-label="unduh">
+            <a href="app/models/edit.php?edit=<?= $row['link']?>">edit</a> |
+            <a href="app/models/edit.php?hapus=<?= $row['link']?>">hapus</a>
+        </td>
     </tr>
 <?php } ?>
